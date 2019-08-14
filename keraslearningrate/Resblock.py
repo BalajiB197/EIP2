@@ -10,7 +10,13 @@ import numpy as np
 from copy import copy
 from typing import Tuple, List, Union, AnyStr, Callable, Dict, Optional
 
-from CustomKerasLayers.utils import to_list
+# from CustomKerasLayers.utils import to_list
+def to_list(x):
+    if isinstance(x, list):
+        return x
+    if isinstance(x, tuple):
+        return list(x)
+    return [x]
 
 
 # region Basic blocks
