@@ -1,5 +1,5 @@
 # import the necessary packages
-from keras.callbacks import LambdaCallback
+from tensorflow.keras.callbacks import LambdaCallback
 # from keras import backend as K
 import tensorflow as tf
 sess = tf.Session()
