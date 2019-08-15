@@ -1,6 +1,11 @@
 # import the necessary packages
 from keras.callbacks import LambdaCallback
 # from keras import backend as K
+import tensorflow as tf
+sess = tf.Session()
+
+from keras import backend as K
+K.set_session(sess)
 import matplotlib.pyplot as plt
 import numpy as np
 import tempfile
